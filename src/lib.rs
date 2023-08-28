@@ -4,14 +4,14 @@
 #![warn(clippy::missing_docs_in_private_items)]
 
 //! `const_list` provides a minimal linked-list which may be used at compile-time. For example:
-//! 
+//!
 //! ```rust
 //! # use const_list::*;
 //! const MY_LIST: ConstList<'static, i32> = ConstList::new()
 //!     .push(2)
 //!     .push(4)
 //!     .push(8);
-//! 
+//!
 //! assert_eq!(8, *MY_LIST.pop().0.unwrap());
 //! ```
 
